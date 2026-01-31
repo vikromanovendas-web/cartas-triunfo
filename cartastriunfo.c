@@ -87,5 +87,54 @@ int main(){
     printf("PIB2: %.2f\n" , PIB2);
     printf("Densidade populacional2: %.2f\n ",densidade_populacional2);
     printf("PIB Percapita2: %.2f\n",PIB_percapita2);
-    return 0;
+
+printf("\n----carta vencedora-----\n");
+// comparação das cartas vitoriosas
+
+if(populacao > populacao2){
+
+      printf("carta1 venceu em População!\n");}
+      
+      else{
+      
+        printf("carta2 venceu em População\n");}
+
+if(numeros_de_Pontos_Turisticos> numeros_de_Pontos_Turisticos2 ){
+    printf("carta1 venceu em Numeros em Pontos Turisticos!\n");}
+
+else{
+    printf("carta2 venceu em Numero em Pontos Turisticos!\n");}
+    
+
+if(PIB > PIB2){
+      printf("carta1 venceu em PIB!\n");}
+
+else {
+      printf("carta2 venceu em PIB!\n");}
+ 
+      if(area_em_km2 > area_em_km22){
+    printf("carta1 venceu em area em km2!\n");}
+
+else{
+    printf("carta2 venceu em area em km2!\n");}
+    
+
+    if(densidade_populacional > densidade_populacional2){
+    printf("carta1 venceu em densidade populacional!\n");}
+
+else{
+    printf("carta2 venceu em densidade populacional!\n");}
+    
+
+    if(PIB_percapita > PIB_percapita2){
+    printf("carta1 venceu em PIB percapita!\n");}
+
+else{
+    printf("carta2 venceu em PIB percapita!\n");}
+    
+
+return 0;
+
+
 }
+
