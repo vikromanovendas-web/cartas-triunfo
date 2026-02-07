@@ -43,7 +43,6 @@ int main()
     printf("Densidade: %.2f\n", densidade_populacional);
     printf("PIB per capita: %.2f\n", PIB_percapita);
 
-
     /* ---------------- CARTA 2 ---------------- */
 
     int populacao2, numeros_de_Pontos_Turisticos2;
@@ -87,11 +86,11 @@ int main()
     printf("Densidade: %.2f\n", densidade_populacional2);
     printf("PIB per capita: %.2f\n", PIB_percapita2);
 
-
     /* -------- MENU REPETINDO -------- */
 
     int opcao;
     float valor1, valor2;
+    float vencedor;
 
     do
     {
@@ -102,6 +101,7 @@ int main()
         printf("4 - PIB\n");
         printf("5 - Densidade populacional\n");
         printf("6 - PIB per capita\n");
+        printf("0 - sair\n");
 
         scanf("%d", &opcao);
 
@@ -145,12 +145,23 @@ int main()
                 continue;
         }
 
-        if (valor1 > valor2)
-            printf("\nCarta 1 venceu neste atributo!\n");
-        else if (valor2 > valor1)
-            printf("\nCarta 2 venceu neste atributo!\n");
-        else
+        if (valor1 == valor2)
+        {
             printf("\nEmpate!\n");
+        }
+        else
+        {
+            vencedor = (valor1 > valor2) ? valor1 : valor2;
+
+            printf("\nCarta %d venceu neste atributo!\n",
+                   (valor1 > valor2) ? 1 : 2);
+
+            printf("Valor da atribuicao (vencedor): %.2f\n", vencedor);
+        }
+
+        printf("\nPressione ENTER para continuar...");
+        getchar();
+        getchar();
 
     } while (1);
 
